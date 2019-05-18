@@ -4,6 +4,16 @@
 
   .intro {
 
+
+    .intro-img {
+      width: 100%;
+
+      img {
+        border-radius: 5px;
+      }
+      
+    }
+
     h2 {
       padding: 15px;
     }
@@ -58,6 +68,13 @@
       }
 
       .btn {
+        .custom-button(white, @btn-bg-color);
+        &:hover {
+          cursor: pointer;
+          background: @footer-background;
+          color: @btn-bg-color;
+          transition: 1s;
+        }
       }
     }
 
