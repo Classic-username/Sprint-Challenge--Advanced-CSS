@@ -161,11 +161,14 @@ p {
   margin: 0 auto;
 }
 .nav {
+  position: sticky;
+  top: 0;
   width: 100%;
   background: #F6F6F6;
   display: flex;
   justify-content: center;
   border-bottom: 2px solid #F1F1F1;
+  opacity: 0.5;
 }
 .nav div {
   display: flex;
@@ -191,6 +194,11 @@ p {
   font-weight: bold;
   color: #454A59;
   text-decoration: none;
+}
+.nav div nav a:hover {
+  color: #000000;
+  transition-timing-function: linear;
+  transition: 1s;
 }
 footer {
   color: #22283B;
